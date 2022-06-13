@@ -8,4 +8,6 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=${DOCKER_ARCH} go build -o tftp
 
 FROM scratch
 COPY --from=build /build/tftp tftp
+ADD docker/etc/passwd /etc/passwd
+USER nobody
 ENTRYPOINT ["/tftp"]
