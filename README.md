@@ -26,7 +26,7 @@ spec:
       - name: pxe
         image: darkautism/k8s-tftp
         ports:
-        - containerPort: 69
+        - containerPort: 6969
         volumeMounts:
           - name: nfs
             mountPath: /tftpboot
@@ -46,7 +46,7 @@ spec:
   ports:
   - port: 69
     protocol: UDP
-    targetPort: 69
+    targetPort: 6969
   selector:
     app: pxe
   sessionAffinity: None

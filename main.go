@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	s, err := tftp.NewServer(":69", tftp.ServerSinglePort(true))
+	s, err := tftp.NewServer(":6969", tftp.ServerSinglePort(true))
 	if err != nil {
 		panic(err)
 	}
