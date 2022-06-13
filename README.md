@@ -3,7 +3,13 @@ Tftp server which can running on Kubernetes.
 Repository: https://hub.docker.com/r/darkautism/k8s-tftp
 Github: https://github.com/darkautism/k8s-tftp
 
-## How to use
+## How to use - docker
+
+```
+docker run -rm <image> -p 69:6969
+```
+
+## How to use - kubernetes
 
 Create a tftp.yaml like this
 
